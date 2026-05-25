@@ -42,7 +42,7 @@ export const montage: Concept = {
       conceptId: 'montage',
       kind: 'recall',
       front: <>What is <strong>metric montage</strong>?</>,
-      back: <>Cuts at fixed time intervals — every N frames, every M seconds — regardless of what\'s happening in the shot. Rhythm comes purely from duration. Mechanical, percussive.</>,
+      back: <>Cuts at fixed time intervals — every N frames, every M seconds — regardless of what's happening in the shot. Rhythm comes purely from duration. Mechanical, percussive.</>,
     },
     {
       id: 'montage-rhythmic',
@@ -63,14 +63,14 @@ export const montage: Concept = {
       conceptId: 'montage',
       kind: 'recall',
       front: <>What is <strong>overtonal montage</strong> and why is most modern editing overtonal?</>,
-      back: <>A combination of metric, rhythmic, and tonal forces operating simultaneously. Most sophisticated editing manages all three layers at once — the editor isn\'t choosing one mode, they\'re tuning all three.</>,
+      back: <>A combination of metric, rhythmic, and tonal forces operating simultaneously. Most sophisticated editing manages all three layers at once — the editor isn't choosing one mode, they're tuning all three.</>,
     },
     {
       id: 'montage-intellectual',
       conceptId: 'montage',
       kind: 'recall',
       front: <>What is <strong>intellectual montage</strong> and what's a canonical example?</>,
-      back: <>Juxtaposition of two shots to create a new idea not present in either alone. The cut becomes an argument. Eisenstein\'s strikers intercut with cattle being slaughtered; Kubrick\'s bone-to-spaceship in 2001.</>,
+      back: <>Juxtaposition of two shots to create a new idea not present in either alone. The cut becomes an argument. Eisenstein's strikers intercut with cattle being slaughtered; Kubrick's bone-to-spaceship in 2001.</>,
     },
     {
       id: 'montage-doc-use',

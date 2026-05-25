@@ -27,14 +27,14 @@ export const productionSound: Concept = {
       conceptId: 'production-sound',
       kind: 'recall',
       front: <>What's the difference between a <strong>boom</strong> and a <strong>lavalier</strong> mic, and when is each preferred?</>,
-      back: <>A boom is a directional mic on a long pole, held overhead by a boom operator. A lav is a small clip-on mic on the subject\'s clothing. Fiction usually prefers boom (more natural tone, no clothing rustle); documentary usually prefers lav (subject moves freely, loud locations, small crew).</>,
+      back: <>A boom is a directional mic on a long pole, held overhead by a boom operator. A lav is a small clip-on mic on the subject's clothing. Fiction usually prefers boom (more natural tone, no clothing rustle); documentary usually prefers lav (subject moves freely, loud locations, small crew).</>,
     },
     {
       id: 'prod-sound-shotgun',
       conceptId: 'production-sound',
       kind: 'recall',
       front: <>What is a <strong>shotgun</strong> mic and what makes it useful?</>,
-      back: <>A highly directional mic that picks up what it\'s pointed at and rejects sound from the sides. Often camera-mounted or handheld separately. Useful for fast-changing situations where a boom or lav can\'t be set up in time.</>,
+      back: <>A highly directional mic that picks up what it's pointed at and rejects sound from the sides. Often camera-mounted or handheld separately. Useful for fast-changing situations where a boom or lav can't be set up in time.</>,
     },
     {
       id: 'prod-sound-planted',

@@ -33,7 +33,7 @@ export const parallelEditing: Concept = {
       id: 'parallel-thematic-vs-temporal',
       conceptId: 'parallel-editing',
       kind: 'recall',
-      front: <>What\'s the difference between <strong>crosscutting</strong> and <strong>thematic parallel action</strong>?</>,
+      front: <>What's the difference between <strong>crosscutting</strong> and <strong>thematic parallel action</strong>?</>,
       back: <>Crosscutting implies simultaneity — two lines happening at the same time. Thematic parallel action links two lines by meaning rather than time (The Godfather baptism/murders) — the cut creates moral or symbolic resonance, not chronology.</>,
     },
     {
@@ -41,7 +41,7 @@ export const parallelEditing: Concept = {
       conceptId: 'parallel-editing',
       kind: 'recall',
       front: <>What pattern of cut rhythm is typical of an <strong>accelerating climax</strong>?</>,
-      back: <>Cuts grow progressively shorter as the sequence converges. Cut rate rises; the audience\'s pulse follows. The classic chase / rescue / simultaneous-reveal engine.</>,
+      back: <>Cuts grow progressively shorter as the sequence converges. Cut rate rises; the audience's pulse follows. The classic chase / rescue / simultaneous-reveal engine.</>,
     },
     {
       id: 'parallel-split-screen',

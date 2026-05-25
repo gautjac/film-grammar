@@ -33,13 +33,13 @@ export const colorGrading: Concept = {
       conceptId: 'color-grading',
       kind: 'recall',
       front: <>What does it mean to shoot in <strong>log</strong>, and why is it done?</>,
-      back: <>Cameras record a flat, low-contrast, desaturated signal that preserves the maximum tonal information for post-production. Log isn\'t the final image — it\'s the latitude for grading. The image becomes watchable only after correction + grading.</>,
+      back: <>Cameras record a flat, low-contrast, desaturated signal that preserves the maximum tonal information for post-production. Log isn't the final image — it's the latitude for grading. The image becomes watchable only after correction + grading.</>,
     },
     {
       id: 'color-grading-correction-vs-grading',
       conceptId: 'color-grading',
       kind: 'recall',
-      front: <>What\'s the difference between <strong>colour correction</strong> and <strong>colour grading</strong>?</>,
+      front: <>What's the difference between <strong>colour correction</strong> and <strong>colour grading</strong>?</>,
       back: <>Correction is the technical baseline — contrast, white balance, exposure, neutral skin. The image now reads as "right." Grading goes further, pushing the corrected image toward a stylistic register. Most documentary stops at correction; fiction usually continues to grading.</>,
     },
     {
@@ -61,7 +61,7 @@ export const colorGrading: Concept = {
       conceptId: 'color-grading',
       kind: 'recall',
       front: <>What is <strong>bleach bypass</strong> and where did the name come from?</>,
-      back: <>A high-contrast, desaturated look. Originally a film-stock chemical process where the silver layer was retained instead of bleached out — that\'s the literal "bypass." Now done in software. Saving Private Ryan and Minority Report made it canonical.</>,
+      back: <>A high-contrast, desaturated look. Originally a film-stock chemical process where the silver layer was retained instead of bleached out — that's the literal "bypass." Now done in software. Saving Private Ryan and Minority Report made it canonical.</>,
     },
     {
       id: 'color-grading-lut',
