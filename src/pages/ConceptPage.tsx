@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { conceptById } from '../concepts'
+import { Stills } from '../components/Stills'
 
 export function ConceptPage() {
   const { id } = useParams<{ id: string }>()
@@ -33,6 +34,12 @@ export function ConceptPage() {
       <article className="prose-block space-y-4 text-[var(--color-ink)]/85 leading-relaxed">
         {concept.prose}
       </article>
+
+      {concept.stills && concept.stills.length > 0 && (
+        <div className="border-t border-[var(--color-rule)]/30 pt-6">
+          <Stills stills={concept.stills} />
+        </div>
+      )}
 
       <section className="space-y-3 border-t border-[var(--color-rule)]/30 pt-6">
         <h2 className="text-xs uppercase tracking-wider text-[var(--color-ink)]/50">

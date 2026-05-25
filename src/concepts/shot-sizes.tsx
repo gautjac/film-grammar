@@ -21,6 +21,14 @@ export const shotSizes: Concept = {
     </>
   ),
   diagram: <ShotSizesDiagram />,
+  stills: [
+    {
+      src: '/stills/melies-voyage-dans-la-lune.jpg',
+      caption: 'An iconic medium shot: the moon\'s face dominates the frame; the projectile and the off-screen astronomers are tiny by comparison. Scale alone tells the story. Georges Méliès, Le Voyage dans la Lune (1902).',
+      source: 'Wikimedia Commons',
+      license: 'Public domain',
+    },
+  ],
   cards: [
     {
       id: 'shot-sizes-els',

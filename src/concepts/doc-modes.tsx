@@ -21,6 +21,14 @@ export const docModes: Concept = {
     </>
   ),
   diagram: <DocModesDiagram />,
+  stills: [
+    {
+      src: '/stills/vertov-man-with-movie-camera.png',
+      caption: 'Reflexive mode: the apparatus made visible. Dziga Vertov, Man with a Movie Camera (1929) — the canonical reflexive documentary, in which the camera is the subject of its own film.',
+      source: 'Wikimedia Commons',
+      license: 'Public domain',
+    },
+  ],
   cards: [
     {
       id: 'doc-modes-six',

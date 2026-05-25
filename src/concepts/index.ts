@@ -5,13 +5,21 @@ import { oneEightyRule } from './one-eighty-rule'
 import { focalLength } from './focal-length'
 import { coverage } from './coverage'
 import { docModes } from './doc-modes'
+import { eyelineMatch } from './eyeline-match'
+import { aspectRatio } from './aspect-ratio'
+import { continuityCuts } from './continuity-cuts'
+import { lighting } from './lighting'
 
 export const concepts: Concept[] = [
   shotSizes,
+  aspectRatio,
   focalLength,
   dollyVsZoom,
   coverage,
   oneEightyRule,
+  eyelineMatch,
+  continuityCuts,
+  lighting,
   docModes,
 ]
 
