@@ -21,6 +21,10 @@ import { colorTheory } from './color-theory'
 import { colorTemperature } from './color-temperature'
 import { colorPalettes } from './color-palettes'
 import { colorGrading } from './color-grading'
+import { productionDesign } from './production-design'
+import { costume } from './costume'
+import { interviewGrammar } from './interview-grammar'
+import { archival } from './archival'
 
 export const concepts: Concept[] = [
   shotSizes,
@@ -35,6 +39,8 @@ export const concepts: Concept[] = [
   eyelineMatch,
   continuityCuts,
   blocking,
+  productionDesign,
+  costume,
   montage,
   parallelEditing,
   lighting,
@@ -45,6 +51,8 @@ export const concepts: Concept[] = [
   diegeticSound,
   productionSound,
   docModes,
+  interviewGrammar,
+  archival,
 ]
 
 export const conceptById: Record<string, Concept> = Object.fromEntries(
