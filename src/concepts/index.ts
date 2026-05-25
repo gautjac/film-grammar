@@ -25,6 +25,9 @@ import { productionDesign } from './production-design'
 import { costume } from './costume'
 import { interviewGrammar } from './interview-grammar'
 import { archival } from './archival'
+import { qualityOfLight } from './quality-of-light'
+import { soundDesign } from './sound-design'
+import { lensCharacter } from './lens-character'
 
 export const concepts: Concept[] = [
   shotSizes,
@@ -32,6 +35,7 @@ export const concepts: Concept[] = [
   cameraAngles,
   focalLength,
   depthOfField,
+  lensCharacter,
   dollyVsZoom,
   cameraMovement,
   coverage,
@@ -44,12 +48,14 @@ export const concepts: Concept[] = [
   montage,
   parallelEditing,
   lighting,
+  qualityOfLight,
   colorTheory,
   colorTemperature,
   colorPalettes,
   colorGrading,
   diegeticSound,
   productionSound,
+  soundDesign,
   docModes,
   interviewGrammar,
   archival,
