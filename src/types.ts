@@ -9,6 +9,7 @@ export type Family =
   | 'Editing & Coverage'
   | 'Sound'
   | 'Lighting'
+  | 'Color'
   | 'Mise-en-scène'
   | 'Documentary Modes'
   | 'Sequence Construction'

@@ -17,6 +17,10 @@ import { blocking } from './blocking'
 import { montage } from './montage'
 import { parallelEditing } from './parallel-editing'
 import { productionSound } from './production-sound'
+import { colorTheory } from './color-theory'
+import { colorTemperature } from './color-temperature'
+import { colorPalettes } from './color-palettes'
+import { colorGrading } from './color-grading'
 
 export const concepts: Concept[] = [
   shotSizes,
@@ -34,6 +38,10 @@ export const concepts: Concept[] = [
   montage,
   parallelEditing,
   lighting,
+  colorTheory,
+  colorTemperature,
+  colorPalettes,
+  colorGrading,
   diegeticSound,
   productionSound,
   docModes,

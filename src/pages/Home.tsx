@@ -11,6 +11,7 @@ const FAMILY_ORDER: Family[] = [
   'Sequence Construction',
   'Sound',
   'Lighting',
+  'Color',
   'Documentary Modes',
 ]
 
