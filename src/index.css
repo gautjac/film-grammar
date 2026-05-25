@@ -1,3 +1,8 @@
+/* Hallmark · macrostructure: Long Document · tone: editorial · anchor hue: crimson
+ * redesign: mobile-polish · genre: editorial · theme: Newsprint-adjacent
+ * mobile verified: 320 / 375 / 414 / 768
+ */
+
 @import "tailwindcss";
 
 @theme {
@@ -5,21 +10,76 @@
   --color-paper: #f5f3ef;
   --color-rule: #2a2a2a;
   --color-accent: #c43a2a;
+  --color-muted: #6f6a64;
   --font-display: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  --font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --text-display-fluid: clamp(2.25rem, 5vw + 1rem, 4rem);
+  --text-h1-fluid: clamp(1.875rem, 3vw + 1rem, 3rem);
+  --text-h2-fluid: clamp(1.5rem, 2vw + 0.75rem, 2.25rem);
 }
 
-html, body, #root {
+html,
+body {
+  overflow-x: clip;
+}
+
+html,
+body,
+#root {
   height: 100%;
 }
 
 body {
   background: var(--color-paper);
   color: var(--color-ink);
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-display);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.012em;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+h1 {
+  line-height: 1.05;
+}
+
+/* All grid + flex items can shrink below their intrinsic content width. */
+* {
+  min-width: 0;
+}
+
+/* Affordances are always single-line. */
+.nav-link,
+.btn-quality {
+  white-space: nowrap;
+}
+
+/* Comfortable touch targets on coarse pointers. */
+@media (pointer: coarse) {
+  button,
+  a.nav-link {
+    min-height: 40px;
+  }
+}
+
+/* Visible focus ring at >= 3:1 contrast. */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Honour reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
