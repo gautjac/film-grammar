@@ -9,17 +9,25 @@ import { eyelineMatch } from './eyeline-match'
 import { aspectRatio } from './aspect-ratio'
 import { continuityCuts } from './continuity-cuts'
 import { lighting } from './lighting'
+import { cameraAngles } from './camera-angles'
+import { cameraMovement } from './camera-movement'
+import { depthOfField } from './depth-of-field'
+import { diegeticSound } from './diegetic-sound'
 
 export const concepts: Concept[] = [
   shotSizes,
   aspectRatio,
+  cameraAngles,
   focalLength,
+  depthOfField,
   dollyVsZoom,
+  cameraMovement,
   coverage,
   oneEightyRule,
   eyelineMatch,
   continuityCuts,
   lighting,
+  diegeticSound,
   docModes,
 ]
 

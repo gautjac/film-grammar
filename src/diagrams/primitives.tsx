@@ -41,13 +41,14 @@ interface CameraProps {
   rotation?: number
   size?: number
   label?: string
+  opacity?: number
 }
 
-export function Camera({ x, y, rotation = 0, size = 28, label }: CameraProps) {
+export function Camera({ x, y, rotation = 0, size = 28, label, opacity = 1 }: CameraProps) {
   const w = size
   const h = size * 0.6
   return (
-    <g transform={`translate(${x} ${y}) rotate(${rotation})`}>
+    <g transform={`translate(${x} ${y}) rotate(${rotation})`} opacity={opacity}>
       <rect
         x={-w / 2}
         y={-h / 2}
