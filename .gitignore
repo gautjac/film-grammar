@@ -5,3 +5,6 @@ dist
 .env
 .vite
 *.tsbuildinfo
+
+# Local Netlify folder
+.netlify
