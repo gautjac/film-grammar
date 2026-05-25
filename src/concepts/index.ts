@@ -13,6 +13,10 @@ import { cameraAngles } from './camera-angles'
 import { cameraMovement } from './camera-movement'
 import { depthOfField } from './depth-of-field'
 import { diegeticSound } from './diegetic-sound'
+import { blocking } from './blocking'
+import { montage } from './montage'
+import { parallelEditing } from './parallel-editing'
+import { productionSound } from './production-sound'
 
 export const concepts: Concept[] = [
   shotSizes,
@@ -26,8 +30,12 @@ export const concepts: Concept[] = [
   oneEightyRule,
   eyelineMatch,
   continuityCuts,
+  blocking,
+  montage,
+  parallelEditing,
   lighting,
   diegeticSound,
+  productionSound,
   docModes,
 ]
 
