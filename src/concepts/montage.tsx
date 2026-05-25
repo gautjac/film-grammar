@@ -21,6 +21,14 @@ export const montage: Concept = {
     </>
   ),
   diagram: <MontageDiagram />,
+  stills: [
+    {
+      src: '/stills/eisenstein-potemkin.jpg',
+      caption: 'Sergei Eisenstein, Battleship Potemkin (1925). The film that codified intellectual montage in practice — cuts that produce meaning beyond either shot alone. The Odessa Steps sequence is the canonical demonstration.',
+      source: 'Wikimedia Commons',
+      license: 'Public domain',
+    },
+  ],
   cards: [
     {
       id: 'montage-five',

@@ -1,5 +1,6 @@
 import type { Concept } from '../types'
 import { OneEightyRuleDiagram } from '../diagrams/OneEightyRuleDiagram'
+import { MiniLineCrossing } from '../diagrams/MiniDiagrams'
 
 export const oneEightyRule: Concept = {
   id: 'one-eighty-rule',
@@ -49,6 +50,18 @@ export const oneEightyRule: Concept = {
       kind: 'recall',
       front: <>How does the 180° rule apply to documentary interviews?</>,
       back: <>For a two-person interview, the same eyeline logic holds — keep the camera on one side of the line between them. For interview + cutaway, the interviewee should look across the screen toward the implied interviewer.</>,
+    },
+    {
+      id: 'one-eighty-recognize-cross',
+      conceptId: 'one-eighty-rule',
+      kind: 'recognize',
+      front: (
+        <>
+          <p className="text-xs uppercase tracking-[0.14em] text-[var(--color-ink)]/55 mb-3">Is this camera position legal?</p>
+          <MiniLineCrossing />
+        </>
+      ),
+      back: <>No — the camera crosses the eyeline (180° line) between the two subjects. In the cut they would appear to swap sides of the frame.</>,
     },
   ],
 }

@@ -1,5 +1,6 @@
 import type { Concept } from '../types'
 import { LensCharacterDiagram } from '../diagrams/LensCharacterDiagram'
+import { MiniHexBokeh, MiniAnamorphic } from '../diagrams/MiniDiagrams'
 
 export const lensCharacter: Concept = {
   id: 'lens-character',
@@ -76,6 +77,30 @@ export const lensCharacter: Concept = {
       kind: 'recall',
       front: <>How does the lens-character question shift in documentary?</>,
       back: <>Doc often shoots whatever zoom is mounted; the question becomes <em>treatment</em> rather than choice — adding a diffusion filter to take the edge off clinical glass, or accepting cheap-zoom distortion as documentary signature. The character is curated through filtration, not selected through glass.</>,
+    },
+    {
+      id: 'lens-character-recognize-hex',
+      conceptId: 'lens-character',
+      kind: 'recognize',
+      front: (
+        <>
+          <p className="text-xs uppercase tracking-[0.14em] text-[var(--color-ink)]/55 mb-3">What kind of lens produces this bokeh?</p>
+          <MiniHexBokeh />
+        </>
+      ),
+      back: <>Vintage / older glass with a fewer-bladed aperture iris. Hexagonal bokeh is the iris fingerprint of older lenses; modern primes produce round bokeh through curved blades.</>,
+    },
+    {
+      id: 'lens-character-recognize-anamorphic',
+      conceptId: 'lens-character',
+      kind: 'recognize',
+      front: (
+        <>
+          <p className="text-xs uppercase tracking-[0.14em] text-[var(--color-ink)]/55 mb-3">What kind of lens produces this flare?</p>
+          <MiniAnamorphic />
+        </>
+      ),
+      back: <>Anamorphic lens. The signature horizontal blue streak comes from the aspherical front element that squeezes a wide image onto a standard sensor.</>,
     },
   ],
 }

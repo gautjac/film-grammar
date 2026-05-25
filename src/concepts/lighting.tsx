@@ -1,5 +1,6 @@
 import type { Concept } from '../types'
 import { LightingDiagram } from '../diagrams/LightingDiagram'
+import { MiniRembrandt, MiniSilhouette } from '../diagrams/MiniDiagrams'
 
 export const lighting: Concept = {
   id: 'lighting',
@@ -21,6 +22,14 @@ export const lighting: Concept = {
     </>
   ),
   diagram: <LightingDiagram />,
+  stills: [
+    {
+      src: '/stills/wiene-caligari.jpg',
+      caption: 'Robert Wiene, The Cabinet of Dr. Caligari (1920). Extreme chiaroscuro — high-contrast hard light producing painted-on shadows and stark cheekbones. Expressionist lighting taken to its formal limit.',
+      source: 'Wikimedia Commons',
+      license: 'Public domain',
+    },
+  ],
   cards: [
     {
       id: 'lighting-three-roles',
@@ -56,6 +65,30 @@ export const lighting: Concept = {
       kind: 'recall',
       front: <>How does documentary lighting differ from fiction in practice?</>,
       back: <>Documentary usually doesn't build the three lights — it finds them in a real space. A window becomes the key, an open doorway becomes a back-light. The working habit is reading available light through the three-point vocabulary.</>,
+    },
+    {
+      id: 'lighting-recognize-rembrandt',
+      conceptId: 'lighting',
+      kind: 'recognize',
+      front: (
+        <>
+          <p className="text-xs uppercase tracking-[0.14em] text-[var(--color-ink)]/55 mb-3">Which lighting setup?</p>
+          <MiniRembrandt />
+        </>
+      ),
+      back: <>Rembrandt lighting. Key high and 45° to one side — produces the characteristic triangle of light on the shadow-side cheek.</>,
+    },
+    {
+      id: 'lighting-recognize-silhouette',
+      conceptId: 'lighting',
+      kind: 'recognize',
+      front: (
+        <>
+          <p className="text-xs uppercase tracking-[0.14em] text-[var(--color-ink)]/55 mb-3">Which lighting setup?</p>
+          <MiniSilhouette />
+        </>
+      ),
+      back: <>Silhouette. Only a back light behind the subject — face goes black, outline glows. Used to anonymise or for stylised drama.</>,
     },
   ],
 }

@@ -1,5 +1,6 @@
 import type { Concept } from '../types'
 import { InterviewGrammarDiagram } from '../diagrams/InterviewGrammarDiagram'
+import { MiniInterrotron } from '../diagrams/MiniDiagrams'
 
 export const interviewGrammar: Concept = {
   id: 'interview-grammar',
@@ -67,8 +68,20 @@ export const interviewGrammar: Concept = {
       id: 'interview-stack-of-choices',
       conceptId: 'interview-grammar',
       kind: 'recall',
-      front: <>What small choices stack up to form an interview\'s "stance" toward its subject?</>,
+      front: <>What small choices stack up to form an interview's "stance" toward its subject?</>,
       back: <>Eyeline (off-camera vs. lens), framing (tight CU vs. MCU with lead room), camera height (level vs. slightly above/below), mic choice (lav vs. boom), background (neutral vs. revealing). Each is a stance.</>,
+    },
+    {
+      id: 'interview-recognize-interrotron',
+      conceptId: 'interview-grammar',
+      kind: 'recognize',
+      front: (
+        <>
+          <p className="text-xs uppercase tracking-[0.14em] text-[var(--color-ink)]/55 mb-3">Which interview setup is this?</p>
+          <MiniInterrotron />
+        </>
+      ),
+      back: <>Errol Morris's Interrotron — beam splitter in front of the lens projects the interviewer's face onto a monitor below; subject looks at the interviewer but speaks straight into camera.</>,
     },
   ],
 }

@@ -21,6 +21,14 @@ export const coverage: Concept = {
     </>
   ),
   diagram: <CoverageDiagram />,
+  stills: [
+    {
+      src: '/stills/chaplin-modern-times.jpg',
+      caption: 'Charlie Chaplin, Modern Times (1936). The silent-era long shot — full body in environment, props and architecture as much subject as the figure. Chaplin\'s coverage strategy emphasised wide framings to let physical performance read across the whole body.',
+      source: 'Wikimedia Commons',
+      license: 'Public domain',
+    },
+  ],
   cards: [
     {
       id: 'coverage-master-purpose',

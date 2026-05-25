@@ -28,6 +28,12 @@ export const docModes: Concept = {
       source: 'Wikimedia Commons',
       license: 'Public domain',
     },
+    {
+      src: '/stills/ivens-regen.jpg',
+      caption: 'Poetic mode: mood and rhythm over argument. Joris Ivens, Regen / Rain (1929). A short city-symphony tone poem of Amsterdam in the rain — an early canonical example of the poetic documentary.',
+      source: 'Wikimedia Commons',
+      license: 'Public domain',
+    },
   ],
   cards: [
     {

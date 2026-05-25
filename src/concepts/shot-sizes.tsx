@@ -1,5 +1,6 @@
 import type { Concept } from '../types'
 import { ShotSizesDiagram } from '../diagrams/ShotSizesDiagram'
+import { MiniCU, MiniMS, MiniLS } from '../diagrams/MiniDiagrams'
 
 export const shotSizes: Concept = {
   id: 'shot-sizes',
@@ -57,6 +58,42 @@ export const shotSizes: Concept = {
       kind: 'recall',
       front: <>What's the storytelling function of moving from MS to CU within a scene?</>,
       back: <>Concentrates attention on performance and emotion. The wider shot located the subject; the closer one reads them.</>,
+    },
+    {
+      id: 'shot-sizes-recognize-cu',
+      conceptId: 'shot-sizes',
+      kind: 'recognize',
+      front: (
+        <>
+          <p className="text-xs uppercase tracking-[0.14em] text-[var(--color-ink)]/55 mb-3">Which shot size?</p>
+          <MiniCU />
+        </>
+      ),
+      back: <>Close-up (CU). Face fills the frame — emotional weight.</>,
+    },
+    {
+      id: 'shot-sizes-recognize-ms',
+      conceptId: 'shot-sizes',
+      kind: 'recognize',
+      front: (
+        <>
+          <p className="text-xs uppercase tracking-[0.14em] text-[var(--color-ink)]/55 mb-3">Which shot size?</p>
+          <MiniMS />
+        </>
+      ),
+      back: <>Medium shot (MS). Waist up — standard conversational framing.</>,
+    },
+    {
+      id: 'shot-sizes-recognize-ls',
+      conceptId: 'shot-sizes',
+      kind: 'recognize',
+      front: (
+        <>
+          <p className="text-xs uppercase tracking-[0.14em] text-[var(--color-ink)]/55 mb-3">Which shot size?</p>
+          <MiniLS />
+        </>
+      ),
+      back: <>Long shot (LS). Full body with surrounding space — locates subject in setting.</>,
     },
   ],
 }

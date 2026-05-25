@@ -2,6 +2,7 @@ import { NavLink, Outlet } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { db } from '../lib/db'
 import { allCards } from '../concepts'
+import { ThemeToggle } from './ThemeToggle'
 
 export function Layout() {
   const dueCount = useLiveQuery(async () => {
@@ -46,6 +47,7 @@ export function Layout() {
                 </span>
               )}
             </NavLink>
+            <ThemeToggle />
           </nav>
         </div>
       </header>
@@ -53,8 +55,11 @@ export function Layout() {
         <Outlet />
       </main>
       <footer className="border-t border-[var(--color-rule)]/30 mt-10 sm:mt-12">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 text-xs text-[var(--color-ink)]/50">
-          Personal study notes — diagrams in SVG, reviews local-first via Dexie.
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 text-xs text-[var(--color-ink)]/50 flex items-baseline gap-4">
+          <span>Personal study notes — diagrams in SVG, reviews local-first via Dexie.</span>
+          <NavLink to="/settings" className="ml-auto shrink-0 hover:text-[var(--color-accent)] transition-colors">
+            Settings
+          </NavLink>
         </div>
       </footer>
     </div>

@@ -1,5 +1,6 @@
 import type { Concept } from '../types'
 import { CameraAnglesDiagram } from '../diagrams/CameraAnglesDiagram'
+import { MiniLowAngle, MiniHighAngle, MiniDutch } from '../diagrams/MiniDiagrams'
 
 export const cameraAngles: Concept = {
   id: 'camera-angles',
@@ -56,6 +57,42 @@ export const cameraAngles: Concept = {
       kind: 'recall',
       front: <>What is the <strong>Dutch angle</strong> and what's the difference from a high or low angle?</>,
       back: <>Camera rolled on its axis so the horizon tilts within the frame. It's an orientation change, not a height change. Encodes unease, disorientation, instability — different from the height-based dominance/diminishment of high/low.</>,
+    },
+    {
+      id: 'camera-angles-recognize-low',
+      conceptId: 'camera-angles',
+      kind: 'recognize',
+      front: (
+        <>
+          <p className="text-xs uppercase tracking-[0.14em] text-[var(--color-ink)]/55 mb-3">Which camera angle?</p>
+          <MiniLowAngle />
+        </>
+      ),
+      back: <>Low angle. Camera below the subject, looking up — towering, dominant, threatening.</>,
+    },
+    {
+      id: 'camera-angles-recognize-high',
+      conceptId: 'camera-angles',
+      kind: 'recognize',
+      front: (
+        <>
+          <p className="text-xs uppercase tracking-[0.14em] text-[var(--color-ink)]/55 mb-3">Which camera angle?</p>
+          <MiniHighAngle />
+        </>
+      ),
+      back: <>High angle. Camera above the subject, looking down — diminished, vulnerable, judged.</>,
+    },
+    {
+      id: 'camera-angles-recognize-dutch',
+      conceptId: 'camera-angles',
+      kind: 'recognize',
+      front: (
+        <>
+          <p className="text-xs uppercase tracking-[0.14em] text-[var(--color-ink)]/55 mb-3">Which camera angle?</p>
+          <MiniDutch />
+        </>
+      ),
+      back: <>Dutch (canted) angle. Camera rolled on its axis so the horizon tilts. Encodes unease and instability.</>,
     },
   ],
 }
